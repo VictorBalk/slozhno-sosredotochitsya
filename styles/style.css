@@ -65,9 +65,8 @@
   margin-left: 10px;
   margin-block-start: 6px;
   border-radius: 100%;
-  box-shadow: 0 0 4px 2px #ff0070;
-  fill: #ff0070;
-  background-color: #ff0070;
+  box-shadow: 0 0 4px 2px var( --accent-color );
+  background-color: var( --accent-color );
 }
 
 .header__title {
@@ -76,7 +75,7 @@
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
-  text-shadow: 4px 4px 0 #ff0070;
+  text-shadow: 4px 4px 0 var( --accent-color );
 }
 
 .header_text {
@@ -221,9 +220,14 @@ img {
 .gold_fish_article_title {
   margin-block-end: 20px;
 }
-h5 {
+.article_subtitle {
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
   color: #000028;
+}
+
+.link_decor{
+  text-decoration: none;
+  color: var( --accent-color );
 }
