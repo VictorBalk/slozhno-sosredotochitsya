@@ -3,7 +3,14 @@
   и их переопределение под различные устройства
 */
 :root {
-  --accent-font-family: 'IBM Plex Mono', sans-serif;
-  --accent-color:#ff0070;
-  --accent-font-size:1.12rem;
+  --accent-font-family: "IBM Plex Mono", sans-serif;
+  --accent-background-image: url(../images/cover-image-dark.png);
+  --accent-color: #ff0070;
+  --accent-color: #db00ff;
+  --accent-font-size: 18px;
+  --margin-header-right: 20px;
+  --margin-header-left: 10px;
+}
+
+@media (width < 1024px) {
 }
