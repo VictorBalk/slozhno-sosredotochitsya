@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin-inline: var(--margin-header-right);
+  margin-inline: var(--margin-offset);
 }
 .container {
   display: flex;
@@ -12,6 +12,9 @@
 .article_container {
   display: grid;
   gap: 20px;
+}
+.article_title {
+  font-size: inherit;
 }
 
 .article_text {
@@ -40,7 +43,7 @@
 .article_concentrate {
   grid-template-columns: repeat(
     auto-fill,
-    minmax(calc(100% / 3 - 2 * var(--margin-header-right)), 1fr)
+    minmax(calc(100% / 3 - 2 * var(--margin-offset)), 1fr)
   );
 }
 .section_title {
@@ -67,7 +70,7 @@ section:last-child {
 }
 
 .link_decor:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid;
 }
 .link_decor:focus {
   outline: 1px solid;
@@ -83,17 +86,19 @@ section:last-child {
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(calc(100% / 3 - 2 * var(--margin-header-right)), 1fr)
+    minmax(calc(100% / 3 - 2 * var(--margin-offset)), 1fr)
   );
-  gap: var(--margin-header-right);
+  gap: var(--margin-offset);
   max-width: 100vw;
-  margin-block-start: var(--margin-header-right);
+  margin-block-start: var(--margin-offset);
 }
 
 .gallery_items {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+
 }
 .gallery_items-picture_1 {
   grid-column: span 2;

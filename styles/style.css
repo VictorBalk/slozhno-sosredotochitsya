@@ -5,6 +5,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   font-family: var(--accent-font-family);
   font-size: var(--accent-font-size);
+  background-color: var(--accent-background-color-page);
   background-image: var(--accent-background-image);
   background-repeat: no-repeat;
   background-position: center;
@@ -17,31 +18,28 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  margin-inline: var(--margin-header-right);
+  min-height: 668px;
+  margin-inline: var(--margin-offset);
 }
 
-.header::after,
-.header::before,
-.footer::after,
-.footer::before {
+.decorated-zone::after {
   content: "";
   position: absolute;
+  top: var(--margin-offset);
+  right: 0;
   width: 25px;
   height: 25px;
-}
-
-.header:after,
-.footer::after {
-  top: var(--margin-header-right);
-  right: 0;
   border-top: 1px solid;
   border-right: 1px solid;
 }
 
-.header::before,
-.footer::before {
-  bottom: var(--margin-header-right);
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  bottom: var(--margin-offset);
   left: 0;
+  width: 25px;
+  height: 25px;
   border-bottom: 1px solid;
   border-left: 1px solid;
 }
@@ -49,13 +47,14 @@
 .header__theme-menu {
   display: flex;
   justify-self: center;
-  padding-block-start: var(--margin-header-right);
+  padding-block-start: var(--margin-offset);
 }
 .header_decorated-text {
   position: absolute;
-  top: var(--margin-header-right);
+  top: var(--margin-offset);
   right: 0;
   display: var(--accent-rec-display);
+  text-transform: uppercase;
 }
 
 .header_decorated-text:after {
@@ -69,24 +68,25 @@
   background-color: var(--accent-background-color);
 }
 
-.header__title {
+.logo__title {
   display: block;
   color: var(--accent-color-h1);
   font-weight: 700;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-size: var(--logo-font-size);
   line-height: 83%;
   text-shadow: 4px 4px 0 var(--accent-background-color);
 }
-.header__title_margin {
-  margin-inline-start: calc(-1 * var(--margin-header-right));
+
+.header__title {
+  margin-inline-start: calc(-1 * var(--margin-offset));
 }
 
 .header_text {
   display: block;
   justify-self: flex-end;
   align-self: center;
-  width: calc(50vw - var(--margin-header-right));
-  margin-block-end: var(--margin-header-right);
+  width: calc(50vw - var(--margin-offset));
+  margin-block-end: var(--margin-offset);
   font-weight: 700;
   line-height: 130%;
 }
@@ -108,27 +108,21 @@
 }
 
 .header__theme-menu-button_active {
+  pointer-events: none; 
   border: 1px solid;
 }
-.header__theme-menu-button_active:focus {
-  text-underline-offset: 6px;
-}
-.header__theme-menu-button_active:hover {
-  border-color: var(--accent-background-color) / 0.5;
+
+.header__theme-menu-button:hover {
+  border-color: var(--accent-background-color) / 0.4;
 }
 
 .header__theme-menu-button:focus {
-  outline: none;
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  border-bottom: 1px solid;
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
-  text-decoration: underline;
-  text-underline-offset: 6px;
+  border-bottom: 1px solid;
 }
-
 
 .footer {
   position: relative;
@@ -136,12 +130,10 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-inline: var(--margin-header-right);
+  min-height: 668px;
+  margin-inline: var(--margin-offset);
 }
 
 .footer_title {
-  margin-inline-start: calc(-1 * var(--margin-header-right));
+  margin-inline-start: calc(-1 * var(--margin-offset));
 }
-
-
-

@@ -5,12 +5,13 @@
 :root {
   --accent-font-family: "IBM Plex Mono", sans-serif;
   --accent-background-image: url(../images/cover-image-dark.png);
+  --logo-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --accent-color: #ff0070;
+  --accent-background-color-page:#000028;
   --accent-background-color: #ff0070;
   --accent-color-h1:#db00ff;
   --accent-article_text:#f1b2ce;
   --accent-font-size: 18px;
-  --margin-header-right: 20px;
-  --margin-header-left: 10px;
+  --margin-offset: 20px;
   --accent-rec-display:flex;
 }
