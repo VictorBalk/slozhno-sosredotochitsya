@@ -6,11 +6,11 @@
   --accent-font-family: "IBM Plex Mono", sans-serif;
   --accent-background-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
-  --accent-color: #db00ff;
+  --accent-background-color: #ff0070;
+  --accent-color-h1:#db00ff;
+  --accent-article_text:#f1b2ce;
   --accent-font-size: 18px;
   --margin-header-right: 20px;
   --margin-header-left: 10px;
-}
-
-@media (width < 1024px) {
+  --accent-rec-display:flex;
 }

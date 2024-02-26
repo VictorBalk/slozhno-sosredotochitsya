@@ -5,7 +5,22 @@
 */
 
 .page.theme_light {
-  --accent-color:  #353430;
-  /*  --accent-color: #ff8dcb; */
+  --accent-color: #353430;
+  --accent-background-color: #ff8dcb;
+  --accent-color-h1: #ffc2e6;
+  --accent-article_text: #353430;
+  --accent-rec-display: none;
   --accent-background-image: url(../images/cover-image-light.png);
+
+}
+
+@media ( prefers-color-scheme: light) {
+  :root {
+    --accent-color: #353430;
+    --accent-background-color: #ff8dcb;
+    --accent-color-h1: #ffc2e6;
+    --accent-article_text: #353430;
+    --accent-rec-display: none;
+    --accent-background-image: url(../images/cover-image-light.png);
+  }
 }

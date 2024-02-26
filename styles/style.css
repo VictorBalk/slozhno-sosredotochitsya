@@ -34,16 +34,16 @@
 .footer::after {
   top: var(--margin-header-right);
   right: 0;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid ;
+  border-right: 1px solid ;
 }
 
 .header::before,
 .footer::before {
   bottom: var(--margin-header-right);
   left: 0;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid ;
+  border-left: 1px solid ;
 }
 
 .header__theme-menu {
@@ -55,7 +55,7 @@
   position: absolute;
   top: var(--margin-header-right);
   right: 0;
-  display: flex;
+  display: var(--accent-rec-display);
 }
 
 .header_decorated-text:after {
@@ -65,17 +65,17 @@
   height: 9px;
   margin: 10px;
   border-radius: 100%;
-  box-shadow: 0 0 4px 2px var(--accent-color);
-  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px ;
+  background-color: var(--accent-background-color);
 }
 
 .header__title {
   display: block;
-  color: #db00ff;
+  color: var(--accent-color-h1);
   font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 83%;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--accent-background-color);
 }
 .header__title_margin {
   margin-inline-start: calc(-1 * var(--margin-header-right));
@@ -92,7 +92,7 @@
 }
 .title_decor {
   color: #000028;
-  background-color: var(--accent-color);
+  background-color: var(--accent-background-color);
 }
 .header__theme-menu-list {
   display: flex;
@@ -116,7 +116,7 @@
   
 }
 .header__theme-menu-button_active:hover{
-  border-color: var(--accent-color) / 0.5;
+  border-color: var(--accent-background-color) / 0.5;
 } 
 
 .header__theme-menu-button:focus {
@@ -149,11 +149,9 @@
   /* grid-auto-flow: column; */
   gap: 20px;
 }
-.article_title {
-  /* margin-block-end: 10px; */
-}
+
 .article_text {
-  color: #f1b2ce;
+  color: var(--accent-article_text);
   font-weight: 400;
   line-height: 130%;
 }
@@ -216,9 +214,9 @@ section:last-child {
   grid-row: 2 span;
 }
 
-.gallery_items-picture_4 {
+/* .gallery_items-picture_4 {
     
-}
+} */
 
 .gallery_items-picture_5 {
    grid-column: 2 span;
@@ -246,7 +244,7 @@ section:last-child {
 }
 
 .link_decor {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-background-color);
   text-decoration: none;
 }
 
