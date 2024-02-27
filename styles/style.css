@@ -117,9 +117,9 @@
   border: 1px solid var(--accent-color-color-border-opacity);
 }
 
-.header__theme-menu-button:focus {
+/* .header__theme-menu-button:focus {
   border-bottom: 1px solid;
-}
+} */
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid;
