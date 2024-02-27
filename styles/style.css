@@ -91,7 +91,7 @@
   line-height: 130%;
 }
 .title_decor {
-  color: #000028;
+  color: var(--accent-color-title);
   background-color: var(--accent-background-color);
 }
 .header__theme-menu-list {
@@ -100,11 +100,12 @@
 }
 
 .header__theme-menu-button {
-  border: none;
+  border: 1px solid transparent;
   padding: 0 14px 0 14px;
   outline: none;
   text-transform: lowercase;
   background-color: inherit;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -113,7 +114,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--accent-background-color) / 0.4;
+  border: 1px solid var(--accent-color-color-border-opacity);
 }
 
 .header__theme-menu-button:focus {

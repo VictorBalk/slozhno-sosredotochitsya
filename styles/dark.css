@@ -9,9 +9,11 @@
   --accent-color: #ff0070;
   --accent-background-color: #ff0070;
   --accent-background-color-page:#000028;
+  --accent-color-title: #000028;
   --accent-color-h1:#db00ff;
   --accent-article_text:#f1b2ce;
   --accent-rec-display:flex;
+  --accent-color-color-border-opacity: rgba(255, 0, 112, 0.4);
 }
 
 @media ( prefers-color-scheme: dark) {
@@ -19,9 +21,11 @@
   --accent-background-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
   --accent-background-color: #ff0070;
+  --accent-color-title: #000028;
   --accent-background-color-page:#000028;
   --accent-color-h1:#db00ff;
   --accent-article_text:#f1b2ce;
   --accent-rec-display:flex;
+  --accent-color-color-border-opacity: rgba(255, 0, 112, 0.4);
   }
 }

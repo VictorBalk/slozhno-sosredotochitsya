@@ -10,18 +10,23 @@
   --accent-color-h1: #ffc2e6;
   --accent-article_text: #353430;
   --accent-background-color-page: #fff1f7;
+  --accent-color-title: #353430;
   --accent-rec-display: none;
   --accent-background-image: url(../images/cover-image-light.png);
+  --accent-color-color-border-opacity: rgba(50, 49, 45, 0.4);
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
     --accent-background-color: #ff8dcb;
     --accent-background-color-page: #fff1f7;
+    --accent-color-title: #353430;
     --accent-color-h1: #ffc2e6;
     --accent-article_text: #353430;
     --accent-rec-display: none;
     --accent-background-image: url(../images/cover-image-light.png);
+    --accent-color-color-border-opacity: rgba(50, 49, 45, 0.4);
   }
 }

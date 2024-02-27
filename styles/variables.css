@@ -10,8 +10,10 @@
   --accent-background-color-page:#000028;
   --accent-background-color: #ff0070;
   --accent-color-h1:#db00ff;
+  --accent-color-title: #000028;
   --accent-article_text:#f1b2ce;
   --accent-font-size: 18px;
   --margin-offset: 20px;
   --accent-rec-display:flex;
+  --accent-color-color-border-opacity: rgba(255, 0, 112, 0.4);
 }
